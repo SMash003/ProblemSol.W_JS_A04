@@ -12,7 +12,7 @@ function isSame(arr1, arr2) {
     return "Invalid"
 }
 
-let arr1 = [2, 5, 6], arr2 = [2, 5, 6];
+let arr1 = [2, 5, 6], arr2 = 256;
 console.log(isSame(arr1, arr2))
 
 

@@ -23,6 +23,6 @@ function resultReport(marks){
     }
 }
 
-let marks = [];
+let marks = [98, 87, 67, 91, 92, 33, 87];
 let sum = 0, pass=0, fail=0, finalScore=0;
 console.log(resultReport(marks));

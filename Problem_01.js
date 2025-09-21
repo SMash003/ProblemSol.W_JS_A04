@@ -1,12 +1,11 @@
 function totalFine(fare){
-    let fine = fare + (fare*0.2) + 30;
-    return fine;
+    if(fare > 0 && typeof fare === "number")
+    {
+        let fine = fare + (fare*0.2) + 30;
+        return fine; 
+    }
+    return "Invalid"
 }
 
-let fare = "Gorib tai ticket katinai";
-if(fare > 0 && typeof fare === "number")
-{
-   console.log(totalFine(fare)); 
-}
-else
-    console.log("Invalid");
+let fare = 345;
+console.log(totalFine(fare))

@@ -1,11 +1,10 @@
-function  onlyCharacter( str ) {
-    str = str.replaceAll(' ', '').toUpperCase();
-    return str;
+function onlyCharacter(str) {
+    if (typeof str === 'string'){
+        str = str.replaceAll(' ', '').toUpperCase();
+        return str;
+    }
+    return "Invalid"
 }
 
 let str = " ha ck m e 1 @ru.c  n  "
-if(typeof str === 'string'){
-    console.log(onlyCharacter(str));
-}
-else
-    console.log("Invalid");
+console.log(onlyCharacter(str))
